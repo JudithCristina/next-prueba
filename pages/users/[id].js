@@ -13,6 +13,11 @@ const User = ({ user }) => {
         <Head>
       <title>{user.first_name} {user.last_name}</title> 
            <meta name="description" content={user.first_name}></meta>
+           <meta property="og:title" content={user.first_name} />
+
+<meta property="og:description" content={user.first_name} />
+
+<meta property="og:image" content={user.avatar} />
       </Head>
       <div className="row">
         <div className="col-md-6 offset-md-3">
