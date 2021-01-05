@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import fetch from "isomorphic-fetch";
 
 import Layout from "../../Components/Layout";
+import Head from "next/head";
 
 const User = ({ user }) => {
   const router = useRouter();
@@ -9,6 +10,10 @@ const User = ({ user }) => {
 
   return (
     <Layout>
+        <Head>
+      <title>{user.first_name} {user.last_name}</title> 
+           <meta name="description" content={user.first_name}></meta>
+      </Head>
       <div className="row">
         <div className="col-md-6 offset-md-3">
           <div className="card">

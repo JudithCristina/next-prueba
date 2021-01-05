@@ -1,9 +1,11 @@
+import Head from "next/head";
 import Router from "next/router";
 
 const Users = (props) => {
 // const router = useRouter();
   return (
     <div>
+      
       <ul className="list-group">
         {props.users.map((user) => (
           <li className="list-group-item d-flex justify-content-between align-items-center list-group-item-action" key={user.id} onClick={() => Router.push(`/users/[id]`, `/users/${user.id}`)}>
