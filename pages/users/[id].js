@@ -10,14 +10,17 @@ const User = ({ user }) => {
 
   return (
     <Layout>
-        <Head>
-      <title>{user.first_name} {user.last_name}</title> 
-           <meta name="description" content={user.first_name}></meta>
-           <meta property="og:title" content={user.first_name} />
-
-<meta property="og:description" content={user.first_name} />
-
-<meta property="og:image" content={user.avatar} />
+      <Head>
+        <title>
+          {user.first_name} {user.last_name}
+        </title>
+        <meta name="description" content={user.first_name}></meta>
+        <meta property="og:title" content={user.first_name} />
+        <meta property="og:description" content={user.first_name} />
+        <meta property="og:image" content={user.avatar} />
+        <meta name="twitter:title" content={user.first_name} />
+        <meta name="twitter:description" content={user.first_name} />
+        <meta name="twitter:image" content={user.avatar} />
       </Head>
       <div className="row">
         <div className="col-md-6 offset-md-3">
