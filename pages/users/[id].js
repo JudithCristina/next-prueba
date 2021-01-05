@@ -20,7 +20,7 @@ const User = ({ user }) => {
         <meta property="og:description" content={user.first_name} />
         <meta property="og:image" content={user.avatar} />
         <meta property="og:site_name" content="La Ganga" />
-        <meta property="og:url" content={`${user.ids}`} /> 
+        <meta property="og:url" content={`${user.id}`} /> 
         <meta name="twitter:card" content="summary" /> 
         <meta name="twitter:title" content={user.first_name} />
         <meta name="twitter:description" content={user.first_name} />
